@@ -1,0 +1,34 @@
+[user]
+	email = email
+	name = Aivan Monceller
+[push]
+	default = simple
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[core]
+	filemode = false
+	autocrlf = true
+	preloadindex = true
+	fscache = true
+[alias]
+	ls = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+	ll = !git ls --decorate --numstat
+	dl = "!git ll -1"
+	lg = log --graph --all --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
+[gc]
+	auto = 256
+[credential]
+	helper = store
+[merge]
+        tool = vscode
+[mergetool "vscode"]
+        cmd = code --wait $MERGED
+[diff]
+        tool = vscode
+[difftool "vscode"]
+        cmd = code --wait --diff $LOCAL $REMOTE
