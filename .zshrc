@@ -1,6 +1,8 @@
-export GOPATH=~/go
+export GOPATH=~/Desktop/PL/go
 export GOBIN=$GOPATH/bin
-export PATH="$(brew --prefix homebrew/php/php70)/bin:$GOBIN:$PATH"
+export PROTOCPATH=~/Desktop/SW/protoc-3.5.1-osx-x86_64/bin
+export PHPPATH=/usr/local/opt/php@7.0/bin
+export PATH="$PHPPATH:$GOBIN:$PROTOCPATH:$PATH"
 
 export ZSH=/Users/aivanmonceller/.oh-my-zsh
 export NVM_NODEJS_ORG_MIRROR=http://nodejs.org/dist
